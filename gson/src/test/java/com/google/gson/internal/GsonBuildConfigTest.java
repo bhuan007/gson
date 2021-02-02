@@ -17,10 +17,11 @@ package com.google.gson.internal;
 
 import static org.junit.Assert.assertFalse;
 
+import com.google.gson.GsonBuildConfig;
 import org.junit.Test;
 
 /**
- * Unit tests for {@code GsonBuildConfig}
+ * Unit tests for {@code com.google.gson.GsonBuildConfig}
  *
  * @author Inderjeet Singh
  */

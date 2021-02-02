@@ -1,4 +1,4 @@
-/*
+package com.google.gson;/*
  * Copyright (C) 2018 The Gson authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package com.google.gson.internal;
 
 /**
  * Build configuration for Gson. This file is automatically populated by

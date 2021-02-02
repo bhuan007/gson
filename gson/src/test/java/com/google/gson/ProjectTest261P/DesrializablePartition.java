@@ -1,13 +1,8 @@
-package com.google.gson.ProjectTest264P;
+package com.google.gson.ProjectTest261P;
 import com.google.gson.Gson;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.google.gson.stream.JsonReader;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -63,8 +58,7 @@ public class DesrializablePartition {
     public void testLongJSON() throws FileNotFoundException {
         // String limit is 65,534
         String path = System.getProperty("user.dir");
-        System.out.println(path);
-        File longText = new File(path + "/src/test/java/longstring.txt");
+        File longText = new File(path + "/src/test/java/com/google/gson/ProjectTest261P/longstring.txt");
         Reader reader = new FileReader(longText);
         Person testPerson = gson.fromJson(reader, Person.class);
         //Person expectedPerson = new Person("", 9223372036854775807L, "mustang");
