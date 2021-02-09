@@ -56,7 +56,7 @@ public class DesrializablePartition {
 
     @Test
     public void testLongJSON() throws FileNotFoundException {
-        // String limit is 65,534
+        // String limit is 65,534 characters
         String path = System.getProperty("user.dir");
         File longText = new File(path + "/src/test/java/com/google/gson/ProjectTest261P/longstring.txt");
         Reader reader = new FileReader(longText);
