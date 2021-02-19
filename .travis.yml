@@ -1,5 +1,22 @@
 language: java
 jdk:
-  - openjdk14
+  - openjdk11
+
+script:
+  - cd /java/com/google/gson
+  - mvn -f gson ProjectTest261P
+
 install: mvn -f gson install -DskipTests=true
-script: mvn -f gson test
+
+branches:
+  except:
+    - gh-pages
+
+notifications:
+  email: false
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.m2
