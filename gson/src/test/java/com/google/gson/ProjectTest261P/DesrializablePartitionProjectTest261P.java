@@ -6,7 +6,7 @@ import java.io.*;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class DesrializablePartition {
+public class DesrializablePartitionProjectTest261P {
 
 
     public Gson gson = new Gson();

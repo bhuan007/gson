@@ -8,7 +8,7 @@ import org.junit.Assert;
 
 import java.math.BigDecimal;
 
-public class FunctionalModel {
+public class FunctionalModelProjectTest261P {
 
     private class TestPerson {
         String fullName;

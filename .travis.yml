@@ -2,9 +2,7 @@ language: java
 jdk:
   - openjdk11
 
-script:
-  - cd /java/com/google/gson
-  - mvn -f gson ProjectTest261P
+script: mvn -f gson ProjectTest261P
 
 install: mvn -f gson install -DskipTests=true
 
