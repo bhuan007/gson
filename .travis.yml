@@ -1,19 +1,5 @@
 language: java
 jdk:
-  - openjdk11
-
+  - openjdk14
 install: mvn -f gson install -DskipTests=true
 script: mvn -f gson test
-
-branches:
-  except:
-    - gh-pages
-
-notifications:
-  email: false
-
-sudo: false
-
-cache:
-  directories:
-    - $HOME/.m2
