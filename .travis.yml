@@ -2,9 +2,8 @@ language: java
 jdk:
   - openjdk11
 
-script: mvn -f gson ProjectTest261P
-
 install: mvn -f gson install -DskipTests=true
+script: mvn -f gson test
 
 branches:
   except:

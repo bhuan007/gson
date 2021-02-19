@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 
-public class StructuralTestProjectTest261P {
+public class StructuralTest {
     class NewJsonElement extends JsonElement {
         @Override
         public JsonElement deepCopy() {

@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class DataTypePartitionProjectTest261P {
+public class DataTypePartitionTest {
     // Char only object
     class CharPerson {
         private char first;
