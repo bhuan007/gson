@@ -218,6 +218,7 @@ public final class Gson {
     this.builderFactories = builderFactories;
     this.builderHierarchyFactories = builderHierarchyFactories;
 
+
     List<TypeAdapterFactory> factories = new ArrayList<TypeAdapterFactory>();
 
     // built-in type adapters that cannot be overridden
@@ -280,6 +281,7 @@ public final class Gson {
     this.factories = Collections.unmodifiableList(factories);
   }
 
+
   /**
    * Returns a new GsonBuilder containing all custom factories and configuration used by the current
    * instance.
@@ -306,7 +308,31 @@ public final class Gson {
     return htmlSafe;
   }
 
-  private TypeAdapter<Number> doubleAdapter(boolean serializeSpecialFloatingPointValues) {
+//  private TypeAdapter<Number> doubleAdapter(boolean serializeSpecialFloatingPointValues) {
+//    if (serializeSpecialFloatingPointValues) {
+//      return TypeAdapters.DOUBLE;
+//    }
+//    return new TypeAdapter<Number>() {
+//      @Override public Double read(JsonReader in) throws IOException {
+//        if (in.peek() == JsonToken.NULL) {
+//          in.nextNull();
+//          return null;
+//        }
+//        return in.nextDouble();
+//      }
+//      @Override public void write(JsonWriter out, Number value) throws IOException {
+//        if (value == null) {
+//          out.nullValue();
+//          return;
+//        }
+//        double doubleValue = value.doubleValue();
+//        checkValidFloatingPoint(doubleValue);
+//        out.value(value);
+//      }
+//    };
+//  }
+
+  public TypeAdapter<Number> doubleAdapter(boolean serializeSpecialFloatingPointValues) {
     if (serializeSpecialFloatingPointValues) {
       return TypeAdapters.DOUBLE;
     }

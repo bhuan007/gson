@@ -11,14 +11,11 @@ public class DesrializablePartitionTest {
 
     public Gson gson = new Gson();
 
-
     // Empty String
     String json1 = "";
 
     // Regular JSON String
     String json2 = "{ \"name\":\"John\", \"age\":30, \"car\":null }";
-
-
 
 
     class Person {
